@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Grid by Example</title>
+    <style>
+      .panel-box {
+        background-image: url(/img/tiny_grid.png);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 1rem;
+        position: relative; }
+
+      .panel-primary {
+        background-image: url(/img/inflicted.png);
+        color: #fff; }
+
+      html {
+        font-size: 16px;
+        font-size: 100%;
+        font-family: Open Sans, Arial, Helvetica, Sans-serif;
+        color: #222; }
+
+      p {
+        color: black;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-size: 2.5rem;
+        line-height: 52px;
+        line-height: 3.25rem;
+        margin-top: 104px;
+        margin-top: 6.5rem;
+        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
+        color: black; }
+
+      a {
+        color: #222;
+        transition: all .3s; }
+        a:hover {
+          color: #222; }
+          a:visited {
+            color: #666; }
+            a:visited:hover {
+              color: #222; }
+          a:active {
+            color: #280680; }
+
+      * {
+        line-height: 26px;
+        line-height: 1.625rem;
+        margin: 0px 0px 26px;
+        margin: 0rem 0rem 1.625rem; }
+
+      .panel-primary a:link,
+      .panel-primary a:visited,
+      .homepage-bar a:link,
+      .homepage-bar a:visited {
+        color: #fff; }
+
+      .panel-box > a:link, .panel-box > a:visited {
+        text-decoration: none;
+        color: #000; }
+
+      .panel-box ul {
+        margin: 1rem 0;
+        padding: 0 0 0 1.2em; }
+
+      .grid, .grid-double {
+        background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
+        background-position: left top;
+        background-repeat: repeat;
+        background-size: 100% 26px;
+        background-size: 100% 1.625rem; }
+
+      .grid-double {
+        background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13px, rgba(0, 170, 255, 0.2) 13px, transparent 14px, transparent 26px); }
+
+      .flag-new::before {
+        content: "New!";
+        background-color: #087f23;
+        position: absolute;
+        top: -.8rem;
+        left: -.8rem;
+        padding: .3rem .5rem;
+        display: inline-block;
+        color: #fff;
+        font-weight: both;
+        transform: rotate(-20deg); }
+
+      .wrapper {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1600px; }
+
+    </style>
+  </head>
+  <body>
+    <a id="follow-button" class="btn" title="Follow Rachel Andrew (@rachelandrew) on Twitter" href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgridbyexample.com&amp;ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5Erachelandrew&amp;region=follow_link&amp;screen_name=rachelandrew"><i></i><span class="label" id="l">Follow <b>@rachelandrew</b></span></a>
+
+    <p>This site is a collection of examples, video and other information to help you learn CSS Grid Layout. Developed and maintained by <a href="https://rachelandrew.co.uk">Rachel Andrew</a>.</p>
+
+      <div class="wrapper home-layout">
+
+        <div class="panel-box panel-primary">
+          <h1 id="css-grid-layout">CSS Grid Layout</h1>
+
+<p>This site is a collection of examples, video and other information to help you learn CSS Grid Layout. Developed and maintained by <a href="https://rachelandrew.co.uk">Rachel Andrew</a>.</p>
+
+        </div>
+
+      <div class="panel-box panel-a"><a href="/video">
+        <h2>The Video Tutorial</h2>
+        <p>A collection of short and to the point videos, demonstrating various parts of the CSS Grid Layout specification.</p>
+      </a></div>
+
+      <div class="homepage-bar"><a href="/learn">
+        <h2>Get Started Guide</h2>
+        <p>A structured guide to resources that will help you to start learning CSS Grid Layout.</p>
+      </a></div>
+
+      <div class="panel-box panel-b flag-new"><a href="/examples">
+        <h2>The Examples</h2>
+        <p>Small examples of the CSS Grid Layout specification. Each demonstrates a feature of the specification. Includes new Subgrid examples!</p>
+      </a></div>
+
+      <div class="panel-box panel-c"><a href="/patterns">
+        <h2>Patterns</h2>
+        <p>Grab &amp; Go. A set of example patterns with fallbacks for older browsers. </p>
+      </a></div>
+
+      <div class="panel-box panel-d"><a href="/resources">
+        <h2>Resources</h2>
+        <p>More links to articles, tutorials and conference presentations that will help you learn CSS Grid Layout.</p>
+      </a></div>
+      
+      <div class="panel-box panel-e offsite"><a href="http://csslayout.news">
+        <h2>CSS Layout News</h2>
+        <p>Sign up for a weekly email full of CSS Layout links and resources.</p>
+      </a></div>
+
+      <div class="panel-box panel-f offsite"><a href="https://github.com/rachelandrew/cssgrid-ama">
+        <h2>Questions?</h2>
+        <p><strong>Ask me anything</strong> about Grid Layout over at my GitHub Grid AMA.</p>
+      </a></div>
+
+      <div class="panel-box panel-g"><a href="/what">
+        <h2>About CSS Grid</h2>
+        <p>What even is this? Do I need to care?</p>
+      </a></div>
+      
+      <div class="panel-box panel-h"><a href="/posts">
+        <h2>News</h2>
+        <p>Infrequent updates on this site.</p>
+      </a></div>
+
+      <div class="panel-box panel-i offsite"><a href="https://github.com/rachelandrew/gridbugs">
+        <h2>GridBugs!</h2>
+        <p>If you have found a bug in a browser, or want to see what we have found so far, check out this site.</p>
+      </a></div>
+    </div>
+
+    <footer class="footer"><div class="wrapper">
+      <p>This is a project by Rachel Andrew. Take a look at some of the other things I make.</p>
+      <ul>
+          <li><a href="https://grabaperch.com">Perch CMS</a> - the original Really Little CMS. Designed for speed and simple implementation.</li>
+          <li><a href="https://noti.st">Notist</a> - slide sharing and much more. Create your public speaking portfolio.</li> 
+          <li><a href="https://thecssworkshop.com">The CSS Workshop</a> - learn CSS Layout with me</li> 
+      </ul>
+      <p class="thanks">This site is hosted on <a href="https://www.netlify.com/">Netlify</a>, thanks to their free hosting for open source projects.</p>
+    </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
